@@ -1,0 +1,109 @@
+/* header styles */
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    padding: 25px;
+    z-index: 100;
+}
+.ul-item {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+.header-wraper {
+  height: 66px;
+  
+  
+}
+
+body {
+    height: 1800px;
+    /* padding-top: 66px; */
+}
+.chat-icon img {
+    height: 60px;
+}
+.chat-icon {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* absoute & relative */
+.parent-element {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: aquamarine;
+}
+.child1 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    z-index: 2;
+}
+.child2 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    z-index: 3;
+}
+.image-title {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    color: red;
+}
+.image-wraper {
+    position: relative;
+    display: inline-block;
+}
+
+/* center */
+.center-block {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: lightblue;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear; */
+    transition: all 2s linear; 
+}
+.div-child {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* transition-property: all;
+    transition-duration: 3s; */
+    transition: all 3s;
+}
+
+
+/* hover effects */
+.center-block:hover {
+    background-color: blueviolet;
+    
+}
+.div-child:hover {
+    background-color: brown;
+    transform: translate(-50%,-50%)  rotate(45deg);
+}
+/* .center-block:hover .div-child {
+    background-color: chocolate;
+} */
